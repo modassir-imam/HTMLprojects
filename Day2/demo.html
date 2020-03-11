@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function chk() {
+			var s=/^[1-9]\d{9}$/;
+			var s1=/[a-zA-Z0-9]+([.]?\w+)*@[a-zA-Z0-9]+([.]?[a-zA-Z0-9]+)*(\.\w{2,3})$/;
+			var p=document.getElementById('p').value;
+			var e=document.getElementById('e').value;
+			if(p.match(s))
+				document.getElementById("ans").innerHTML="OK";
+			else
+				document.getElementById("ans").innerHTML="Please enter the phone no.";
+			if(e.match(s1))
+				document.getElementById("ans1").innerHTML="OK";
+			else
+				document.getElementById("ans1").innerHTML="Please enter the correct email";
+		}
+	</script>
+</head>
+<body id="demo">
+	<!--Phone: <input type="text" name="p" id="p"> <span id="ans"></span><br><br>
+	Email: <input type="text" name="e" id="e"> <span id="ans1"></span><br><br>
+	C-Email: <input type="email" name="e" id="l"><br><br>
+	<button onclick="chk()">Submit</button> <input type="reset">-->
+	<script type="text/javascript">
+		var b=6;
+		document.getElementById("demo").innerHTML=b + "<br>" +b;
+	</script>
+</body>
+</html>
